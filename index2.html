@@ -9,36 +9,242 @@
 
 
     <style>
-        #first {
+        body,
+        html {
+            color: #212121;
+            font-family: "Helvetica Neue", "Apple SD Gothic Neo", arial, 나눔고딕, "Nanum Gothic", 돋움, Dotum, Tahoma, Geneva, sans-serif;
+            font-size: 13px;
+            /* https://lqez.github.io/blog/hangul-typo-on-web.html */
+            /* letter-spacing: -0.39px; tmp */
+            /* line-height: 23.4px; */
+            word-break: keep-all;
+            word-wrap: break-word;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .navbar {
             background-color: #212121;
         }
-
+        
+        #first {
+            padding-top: 108px;
+            padding-bottom: 85px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #212121;
+            background-image: url("./img/background.svg");
+            background-repeat: repeat;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+        }
+        
         #intro {
-
+            padding-top: 102px;
+            padding-bottom: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
         }
-
+        
         #stack {
-
+            padding-top: 50px;
+            padding-bottom: 58px;
+            padding-left: 40px;
+            padding-right: 40px;
         }
-
-        #lab {
-
-        }
-
+        
         #vision {
-
+            padding-top: 50px;
+            padding-bottom: 64px;
+            padding-left: 40px;
+            padding-right: 40px;
         }
-
+        
         #partner {
-
+            padding-top: 50px;
+            padding-bottom: 61px;
+            padding-left: 40px;
+            padding-right: 40px;
         }
-
+        
         #team {
-
+            padding-top: 50px;
+            padding-bottom: 100px;
+            padding-left: 40px;
+            padding-right: 40px;
+            text-align: justify;
         }
-
+        
         #project {
+        }
+        
+        .project-left {
+            padding-top: 72px;
+            padding-bottom: 98px;
+            padding-left: 51px;
+            padding-right: 56px;
+        }
+        
+        .project-right {
+            padding-top: 72px;
+            padding-bottom: 98px;
+            padding-left: 51px;
+            padding-right: 56px;
+        }
+        
+        .red-background {
             background-color: #c62828;
+        }
+        
+        footer {
+            background-color: #fffff;
+        }
+        
+        .header-button {
+            background-color: transparent;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+            color: white;
+            border: 2px solid #f06447;
+        }
+        
+        .header-button:hover {
+            color: white;
+            background-color: #f06447;
+            border: 2px solid #f06447;
+        }
+        
+        .intro-icons {
+            padding-top: 100px;
+        }
+        
+        .intro-icon {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+        }
+        
+        .stack-block {
+            border: solid 2px #000000;
+            margin-bottom: 15px!important;
+        }
+        
+        .stack-blocktop {
+            padding-top: 43px;
+            height: 200px;
+            background-color: #000000;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+        }
+        
+        .stack-blockbottom {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .vision-title {
+            padding-bottom: 25px;
+        }
+        
+        .vision-item {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        
+        .vision-item-title {
+            padding-top: 17px;
+            padding-bottom: 6px;
+        }
+        
+        .partner-logo {
+            height: 75px;
+            border: solid 1px #bfbfbf;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .partner-logo > img {
+            width: 80% !important;
+            height: auto !important;
+            max-height: 90% !important;
+        }
+        
+        .footer-sitemap>a {
+            color: #43515c;
+            font-size: 6px;
+        }
+        
+        .px-35 {
+            font-size: 35px;
+        }
+        
+        .px-30 {
+            font-size: 30px;
+        }
+        
+        .px-15 {
+            font-size: 15px;
+        }
+        
+        .px-13 {
+            font-size: 13px;
+        }
+        
+        .px-12 {
+            font-size: 12px;
+        }
+        
+        .px-10 {
+            font-size: 10px;
+        }
+        
+        .px-8 {
+            font-size: 8px;
+        }
+        
+        .px-7 {
+            font-size: 7px;
+        }
+        
+        .px-6 {
+            font-size: 6px;
+        }
+        
+        .black {
+            color: #212121;
+        }
+        
+        .real-black {
+            color: #000000;
+        }
+        
+        .white {
+            color: #ffffff;
+        }
+        
+        .gray {
+            color: #adadad;
+        }
+        
+        .gray-2 {
+            color: #43515c;
+        }
+        
+        .red {
+            color: #d82121;
+        }
+        
+        .bold {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -47,11 +253,11 @@
     <nav class="navbar is-transparent">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
-                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+                <a class="navbar-item" href="http://www.scvsoft.net/">
+                    <img src="./img/header_logo.svg" height="30px" width="120px">
                 </a>
                 <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                    <span>개요</span>
+                    <a class="navbar-item" href="#intro">개요</a>
                     <span>기술소개</span>
                     <span>연구소</span>
                     <span>비전</span>
@@ -63,31 +269,31 @@
 
             <div id="navbarExampleTransparentExample" class="navbar-menu">
                 <div class="navbar-end">
-                    <div class="navbar-item">
-                        <a class="navbar-item" href="#intro">
+                    <div class="navbar-item px-7">
+                        <a class="navbar-item white" href="#intro">
                             개요
                         </a>
-                        <a class="navbar-item" href="#stack">
+                        <a class="navbar-item white" href="#stack">
                             기술소개
                         </a>
-                        <a class="navbar-item" href="#lab">
+                        <a class="navbar-item white" href="#lab">
                             연구소
                         </a>
-                        <a class="navbar-item" href="#vision">
+                        <a class="navbar-item white" href="#vision">
                             비전
                         </a>
-                        <a class="navbar-item" href="#partner">
+                        <a class="navbar-item white" href="#partner">
                             파트너
                         </a>
-                        <a class="navbar-item" href="#team">
+                        <a class="navbar-item white" href="#team">
                             팀소개
                         </a>
-                        <a class="navbar-item" href="#project">
+                        <a class="navbar-item white" href="#project">
                             프로젝트 진행
                         </a>
                         <div class="field is-grouped">
                             <p class="control">
-                                <a class="button" href="">
+                                <a class="button header-button" href="">
                                     <span>Contact Us</span>
                                 </a>
                             </p>
@@ -99,214 +305,331 @@
     </nav>
     <section id="first">
         <div class="columns has-text-centered">
-            <div class="column">
-                <span>상상의 중심 변화의 시작</span>
-                <span>모든 사업의 시작에서 귀하의 곁에 함께합니다.</span>
-                <input type="text" placeholder="입력하신 이메일로 회사소개서를 보내드립니다.">
-                <button>></button>
+            <div class="column white">
+                <img src="./img/main_icon.svg" width="404px" height="auto">
+                <p class="px-35 bold">상상의 중심 변화의 시작</p>
+                <p class="px-15">모든 사업의 시작에서 귀하의 곁에 함께합니다.</p>
+                <p>
+                    <input type="text" placeholder="입력하신 이메일로 회사소개서를 보내드립니다.">
+                    <button>></button>
+                </p>
             </div>
         </div>
     </section>
     <section id="intro">
-    <div class="columns">
-        <div class="column">
+        <div class="columns is-centered">
+            <div class="column is-3-desktop is-4-tablet is-12-mobile px-30 bold">
+                낡은것을 고쳐<br> 새롭게
+                <br> 만들어나갑니다.
+            </div>
+            <div class="column is-3-desktop is-5-tablet is-12-mobile px-12">
+                주식회사 SCV Soft는 사업자의 아이디어에 맞춘 <br> 다양한 웹/앱 서비스 개발 및 유지보수를 제공합니다.<br> 그 외 각종 사업자 유형에 맞춘 신규 암호화폐 개발 및 보안 솔루션<br> 제공과 함께 관련분야 유지보수 사업을 제공하고 있습니다.<br>
+                <br>
+                <a href="" class="bold unberbar">지금시작하기 ></a>
+            </div>
         </div>
-        <div class="column">
+        <div class="intro-icons columns has-text-centered is-multiline is-mobile is-centered">
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+                <div class="intro-icon">
+                    <img src="./img/icon1.svg" width="30px" height="35px">
+                </div>
+                <p class="px-8">
+                    메이저 암호화폐<br> 기반 DApp 제작
+                </p>
+            </div>
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+                <div class="intro-icon">
+                    <img src="./img/icon2.svg" width="30px" height="35px">
+                </div>
+                <p class="px-8">
+                    바이너리 동적 분석<br> 보안전문가 파견
+                </p>
+            </div>
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+                <div class="intro-icon">
+                    <img src="./img/icon3.svg" width="30px" height="35px">
+                </div>
+                <p class="px-8">
+                    소스코드 정적 분석<br> C/Python/PHP/Java
+                </p>
+            </div>
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+                <div class="intro-icon">
+                    <img src="./img/icon4.svg" width="30px" height="35px">
+                </div>
+                <p class="px-8">
+                    소스코드 정적 분석<br> 보안 전문가 파견
+                </p>
+            </div>
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+                <div class="intro-icon">
+                    <img src="./img/icon5.svg" width="30px" height="35px">
+                </div>
+                <p class="px-8">
+                    웹/앱 브랜딩 및<br> 디자인 종합 컨설팅
+                </p>
+            </div>
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+                <div class="intro-icon">
+                    <img src="./img/icon6.svg" width="30px" height="35px">
+                </div>
+                <p class="px-8">
+                    Node 프레임워크<br> 기반 반응형 웹 개발
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="columns">
-        <div class="column">
-            메이저 암호화폐
-            기반 DApp 제작
-        </div>
-        <div class="column">
-            바이너리 동적 분석
-            보안전문가 파견
-        </div>
-        <div class="column">
-            소스코드 정적 분석
-            C/Python/PHP/Java
-        </div>
-        <div class="column">
-            소스코드 정적 분석
-            보안 전문가 파견
-        </div>
-        <div class="column">
-            웹/앱 브랜딩 및
-            디자인 종합 컨설팅
-        </div>
-        <div class="column">
-             Node 프레임워크
-             기반 반응형 웹 개발
-        </div>
-    </div>
     </section>
     <section id="stack">
-    <div class="columns is-gapless">
-        <div class="column">
-            <h2>Cryptocurrency
-                보안 컨설팅</h2>
-            <h3>코인 소스코드 및 블럭 전수분석 수행, 코인 취약점 발견 및 개선 컨설팅(전략기획, 코드 감사) 진행</h3>
-            <h3>서버에 대한 공격 감지 및 대응 보고서 발행</h3>
-            <h3>지갑 및 트랜젝션의 문제 발생 부분 개선 진행</h3>
+        <div class="columns is-gapless is-centered is-multiline">
+            <div class="stack-block column is-2-desktop is-6-tablet">
+                <div class="stack-blocktop">
+                    <img src="./img/supericon1.svg" width="140px" height="auto">
+                </div>
+                <div class="stack-blockbottom">
+                    <p class="px-15 bold">Cryptocurrency</p>
+                    <p class="px-15">보안 컨설팅</p>
+                    <p class="px-7">· 코인 소스코드 및 블럭 전수분석 수행, 코인 취약점 발견 및 개선 컨설팅(전략기획, 코드 감사) 진행</p>
+                    <p class="px-7">· 서버에 대한 공격 감지 및 대응 보고서 발행</p>
+                    <p class="px-7">· 지갑 및 트랜젝션의 문제 발생 부분 개선 진행</p>
+                </div>
+            </div>
+            <div class="stack-block column is-2-desktop is-6-tablet">
+                <div class="stack-blocktop">
+                    <img src="./img/supericon2.svg" width="140px" height="auto">
+                </div>
+                <div class="stack-blockbottom">
+                    <p class="px-15 bold">Website</p>
+                    <p class="px-15">개발 전체 컨설팅</p>
+                    <p class="px-7">· 웹사이트 개발 기획, 디자인, 개발 전체 컨설팅 진행</p>
+                    <p class="px-7">· 최신 트랜드를 반영한 맞춤형 홈페이지 제작 전문</p>
+                    <p class="px-7">· 다양한 환경의 맞춤 웹사이트, 호스팅 및 유지보수, 기타 웹 기반 솔루션 개발 진행</p>
+                </div>
+            </div>
+            <div class="stack-block column is-2-desktop is-6-tablet">
+                <div class="stack-blocktop">
+                    <img src="./img/supericon3.svg" width="140px" height="auto">
+                </div>
+                <div class="stack-blockbottom">
+                    <p class="px-15 bold">Funding</p>
+                    <p class="px-15">솔루션 컨설팅/개발</p>
+                    <p class="px-7">· 서비스 백앤드 개발 및 프론트엔드 개발/디자인</p>
+                    <p class="px-7">· 금융권 API 연동 및 자동화된 PG사 연동</p>
+                    <p class="px-7">· 유지보수 데이터 마이그레이션 , 서버 관리</p>
+                    <p class="px-7">· 데이터베이스 인테그레이션 및 통계, 데이터마이닝</p>
+                </div>
+            </div>
         </div>
-        <div class="column">
-            <h2>Website
-                개발 전체 컨설팅</h2>
-            <h3>웹사이트 개발 기획, 디자인, 개발 전체 컨설팅 진행</h3>
-            <h3>최신 트랜드를 반영한 맞춤형 홈페이지 제작 전문</h3>
-            <h3>다양한 환경의 맞춤 웹사이트, 호스팅 및 유지보수, 기타 웹 기반 솔루션 개발 진행</h3>
-        </div>
-        <div class="column">
-            <h2>Funding
-                솔루션 컨설팅/개발</h2>
-            <h3>서비스 백앤드 개발 및 프론트엔드 개발/디자인</h3>
-            <h3>금융권 API 연동 및 자동화된 PG사 연동</h3>
-            <h3>유지보수 데이터 마이그레이션 , 서버 관리</h3>
-            <h3>데이터베이스 인테그레이션 및 통계, 데이터마이닝</h3>
-        </div>
-    </div>
     </section>
     <section id="vision">
-    <div class="columns has-text-centered">
-        <div class="column">
-            <h1>획기적인 사업에 맞는<br>획기적인 기술 개발 진행</h1>
+        <div class="columns has-text-centered is-mobile is-multiline">
+            <div class="column">
+                <p class="vision-title px-30 bold">
+                    획기적인 사업에 맞는<br> 획기적인 기술 개발 진행
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="columns">
-        <div class="column is-one-third">
-            <h2>DApp 제작</h2>
-            <h3>메이저 코인(비트코인, 이더리움 등 상위권 코인) 기반의 다양한 DApp 제작 전문</h3>
+        <div class="columns is-multiline">
+            <div class="vision-item column is-2-desktop is-offset-3-desktop is-4-tablet">
+                <img src="./img/bigicon1.svg" width="40px" height="40px">
+                <p class="vision-item-title px-15 bold">DApp 제작</p>
+                <p class="px-7">메이저 코인(비트코인, 이더리움 등 상위권 코인) 기반의 다양한 DApp 제작 전문</p>
+            </div>
+            <div class="vision-item column is-2-desktop is-4-tablet">
+                <img src="./img/bigicon2.svg" width="40px" height="40px">
+                <p class="vision-item-title px-15 bold">바이너리 동적 분석</p>
+                <p class="px-7">관련분야 보안전문가 파견 전문가가 디플로이 서버/테스트서버에 모의해킹 수행 바이너리 정보를 이용한 퍼징/Memory Violation을 통한 공격 수행 모의 해킹 정보를 통한 모의 보고서 발행</p>
+            </div>
+            <div class="vision-item column is-2-desktop is-4-tablet">
+                <img src="./img/bigicon3.svg" width="40px" height="40px">
+                <p class="vision-item-title px-15 bold">소스코드 정적 분석</p>
+                <p class="px-7">자체 개발 정적 분석기 (C/Python/PHP/Java) 각 언어를 중간언어(IR)로 트랜스 코딩 IR에 대한 Data/Control Flow 분석 수행 취약점 발견시 자동 넘버링, Graph 형태 트레이스 산출</p>
+            </div>
+            <div class="vision-item column is-2-desktop is-offset-3-desktop is-4-tablet">
+                <img src="./img/bigicon4.svg" width="40px" height="40px">
+                <p class="vision-item-title px-15 bold">보안 전문가 파견</p>
+                <p class="px-7">소스코드 정적분석 진행 전문가의 투입, 코드 드라이빙을 통한 취약점 분석 분석 정보를 바탕으로 한 보고서 작성</p>
+            </div>
+            <div class="vision-item column is-2-desktop is-4-tablet">
+                <img src="./img/bigicon5.svg" width="40px" height="40px">
+                <p class="vision-item-title px-15 bold">디자인 컨설팅</p>
+                <p class="px-7">전문 디자인팀의 다양한 디자인 컨설팅 진행 다양한 환경의 반응형 웹 및 앱 플랫폼 브랜딩 및 디자인 수행 컨설턴트 팀 보유</p>
+            </div>
+            <div class="vision-item column is-2-desktop is-4-tablet">
+                <img src="./img/bigicon6.svg" width="40px" height="40px">
+                <p class="vision-item-title px-15 bold">반응형 웹 개발</p>
+                <p class="px-7">Node 프레임워크 기반의 완전 반응형 웹 개발 개발/기획/디자인 모두를 포함한 웹 개발 컨설팅 통합 맞춤형 서비스 진행</p>
+            </div>
         </div>
-        <div class="column is-one-third">
-            <h2>바이너리 동적 분석</h2>
-            <h3>관련분야 보안전문가 파견
-전문가가 디플로이 서버/테스트서버에 모의해킹 수행
-바이너리 정보를 이용한
-퍼징/Memory Violation을 통한 공격 수행
-모의 해킹 정보를 통한 모의 보고서 발행</h3>
-        </div>
-        <div class="column is-one-third">
-            <h2>소스코드 정적 분석</h2>
-            <h3>자체 개발 정적 분석기 (C/Python/PHP/Java)
-각 언어를 중간언어(IR)로 트랜스 코딩
-IR에 대한 Data/Control Flow 분석 수행
-취약점 발견시 자동 넘버링, Graph 형태 트레이스 산출</h3>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-one-third">
-            <h2>보안 전문가 파견</h2>
-            <h3>소스코드 정적분석 진행
-전문가의 투입, 코드 드라이빙을 통한 취약점 분석
-분석 정보를 바탕으로 한 보고서 작성</h3>
-        </div>
-        <div class="column is-one-third">
-            <h2>디자인 컨설팅</h2>
-            <h3>전문 디자인팀의 다양한 디자인 컨설팅 진행
-다양한 환경의 반응형 웹 및 앱 플랫폼 브랜딩 및
-디자인 수행 컨설턴트 팀 보유</h3>
-        </div>
-        <div class="column is-one-third">
-            <h2>반응형 웹 개발</h2>
-            <h3>Node 프레임워크 기반의 완전 반응형 웹 개발
-개발/기획/디자인 모두를 포함한 웹 개발 컨설팅
-통합 맞춤형 서비스 진행</h3>
-        </div>
-    </div>
     </section>
     <section id="partner">
-    <div class="columns has-text-centered">
-        <div class="column">
-            파트너
+        <div class="columns is-centered has-text-centered is-mobile is-multiline">
+            <div class="column px-30 bold">
+                파트너
+            </div>
         </div>
-    </div>
-    <div class="columns has-text-centered">
-        <div class="column">
+        <div class="columns is-centered is-mobile is-multiline has-text-centered">
+            <div class="column is-offset-3-desktop is-3-tablet-only is-6-mobile">
+                <div class="partner-logo">
+                    <img src="./img/logo_observer@2x.png">
+                </div>
+            </div>
+            <div class="column is-3-tablet-only is-6-mobile">
+                <div class="partner-logo">
+                    <img src="./img/logo_snsmobile@2x.png">
+                </div>
+            </div>
+            <div class="column is-3-tablet-only is-6-mobile">
+                <div class="partner-logo">
+                    <img src="./img/logo_kdex@2x.png">
+                </div>
+            </div>
+            <div class="column is-3-tablet-only is-6-mobile">
+                <div class="partner-logo">
+                    <img src="./img/logo_clust.svg">
+                </div>
+            </div>
+            <div class="column is-offset-2-desktop">
+            </div>
         </div>
-        <div class="column">
-        </div>
-        <div class="column">
-        </div>
-        <div class="column">
-        </div>
-    </div>
     </section>
     <section id="team">
-    <div class="columns">
-        <div class="column">
-            <h1>Members</h1>
-            <h2>다양한 분야의 전문가가 귀하의 발전을 위해서 함께합니다.<br>각 분야 최고의 전문가와 함께하세요.</h2>
+        <div class="columns">
+            <div class="column is-offset-3-desktop">
+                <p class="px-30"><b>Members</b></p>
+                <p class="px-7">
+                    다양한 분야의 전문가가 귀하의 발전을 위해서 함께합니다.<br>각 분야 최고의 전문가와 함께하세요.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="columns">
-        <div class="column">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-2-desktop is-offset-3-desktop is-6-tablet is-12-mobile">
+                <img src="./img/human1@3x.png" width="100%" height="auto">
+                <p class="px-15 bold">Oh Hyo Keun</p>
+                <p class="px-12 bold">CEO</p>
+                <p class="px-7">시간을 달리는 스타트업 힙스터</p>
+                <hr>
+                <p class="px-7">
+                    몇몇 스타트업을 거친 이후로, 오효근 대표는 자신이 IT 스타트업을 운영해도 그들보다는 잘 할 수 있겠다라는 생각이 들었다. 그는 생각이 든 대로 그와 뜻이 맞는 친구들을 모아 SCVSoft를 창설하였으며, 보안 프로그래밍과 블록체인에 대한 풍부한 경험을 바탕으로 회사를 운영하고 있다. 그는 그의 긴 머리칼만큼 긴 시간을 업무에 투자하고 있으며, 최근에는 바다를 보며 코딩하고 싶다는 이야기를 하고 있다.
+                </p>
+            </div>
+            <div class="column is-2-desktop is-6-tablet is-12-mobile">
+                <img src="./img/human2@3x.png" width="100%" height="auto">
+                <p class="px-15 bold">Jeong In Woo</p>
+                <p class="px-12 bold">COO</p>
+                <p class="px-7">블록체인 몽상가</p>
+                <hr>
+                <p class="px-7">
+                    정인우 COO는 3년 이상의 블록체인 관련 업무 경험을 가지 고 있다. 그는 항상 새로운 블록체인 서비스의 론칭 아이디어 를 구상하고 있으며, 그의 아이디어는 SCV 기술자, 투자자들 과의 소통을 통해 단단해져 간다. 그는 지금까지 5개의 블록 체인 플랫폼 아이디어를 프로젝트로 옮겼다. 지금까지 그의 아이디어 로켓은 언제나 폭발하였지만, 그는 언젠가 달으로 갈 날을 희망하고 있다.
+                </p>
+            </div>
+            <div class="column is-2-desktop is-6-tablet is-12-mobile">
+                <img src="./img/human3@3x.png" width="100%" height="auto">
+                <p class="px-15 bold">Lee Je Hyoung</p>
+                <p class="px-12 bold">CTO</p>
+                <p class="px-7">호기심 많은 테트리스 매니악</p>
+                <hr>
+                <p class="px-7">
+                    보안 프로그래밍, IoT 개발, 프로그램 분석, 소프트웨어 교육 등 여기저기 재미있어 보이는 것이라면 다 해봐야 직성이 풀 리는 이제형 CTO는 SCVSoft에서 재미있는 일을 벌이고 있 다는 소문을 듣고 계약서에 도장을 찍었다. 그는 평소에 회사 로 오면 주로 테트리스를 하고 있으며, 하루 평균 2-3시간 정 도를 테트리스에 할애하고 있다.
+                </p>
+            </div>
+            <div class="column is-2-desktop is-offset-3-desktop is-6-tablet is-12-mobile">
+                <img src="./img/unknown.jpg" alt="this is human something" width="100%" height="300px">
+                <p class="px-15 bold">Hong Deok Hyeon</p>
+                <p class="px-12 bold">CMO</p>
+                <p class="px-7">구글에 검색하면 나오는 사람</p>
+                <hr>
+                <p class="px-7">
+                    삼성전자, LG전자 등에서 마케터로 일했던 홍덕현 CMO는 전 부터 블록체인에 관련된 사업을 해보고 싶었기에 SCVSoft 호 에 탑승을 했습니다. 잦은 풍랑이 있었지만, 그는 이 배가 멋 진 신세계로 나아 갈 것이라고 믿고있으며 자신의 믿음을 실 현하기 위해 열심히 노를 젓고 있습니다.
+                </p>
+            </div>
+            <div class="column is-2-desktop is-6-tablet is-12-mobile">
+                <img src="./img/human5@3x.png" width="100%" height="auto">
+                <p class="px-15 bold">Ryu Hwang Won</p>
+                <p class="px-12 bold">Design Team Leader</p>
+                <p class="px-7">꿈을 꾸는 에오르제아의 수호자</p>
+                <hr>
+                <p class="px-7">
+                    디자인을 통해 세상을 좀 더 편리하게 하고 싶었던 류황원 디 자이너는 자신의 꿈과 가장 가까이 있다고 생각해 다니고 있 던 대형 제약회사를 그만두고 SCVSoft와 함께하기로 했다. 세상천지가 디자인이라 모든게 마음에 안드는 그는 SCVSoft 에서 최소한 클라이언트의 제품만이라도 보기 불편하지 않게 하자는 생각으로 일하고 있다.
+                </p>
+            </div>
+            <div class="column is-2-desktop">
+            </div>
         </div>
-        <div class="column">
-        </div>
-        <div class="column">
-        </div>
-        <div class="column">
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column">
-        </div>
-        <div class="column">
-        </div>
-        <div class="column">
-        </div>
-        <div class="column">
-        </div>
-    </div>
     </section>
     <section id="project">
-    <div class="columns">
-        <div class="column">
-            프로젝트는<br>
-            어떤 방식을 통해<br>
-            진행되나요?
+        <div class="columns is-centered is-mobile is-multiline">
+            <div class="project-left column is-3-desktop white red-background">
+                <p class="px-35 bold">
+                    프로젝트는<br> 어떤 방식을 통해<br> 진행되나요?
+                </p>
+            </div>
+            <div class="project-right column is-3-desktop white red-background">
+                <p class="px-13 bold">
+                    Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do <br> eiusmod tempor.
+                </p>
+                <hr>
+                <p class="px-10">
+                    1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                </p>
+                <p class="px-10">
+                    2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.<br>
+                </p>
+                <p class="px-10">
+                    3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.<br>
+                </p>
+                <p class="px-10">
+                    4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.<br>
+                </p>
+                <p class="px-10">
+                    5. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.<br>
+                </p>
+            </div>
         </div>
-        <div class="column">
-            Lorem ipsum dolor sit amet, <br>
-            consectetur adipisicing elit, sed do <br>
-            eiusmod tempor. <br>
-            <hr>
-            1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.<br>
-            2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.<br>
-            3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.<br>
-            4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.<br>
-            5. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.<br>
-        </div>
-    </div>
     </section>
     <footer class="footer">
-        <div class="columns">
-            <div class="column">
-                SCV Soft는 낡은것을 고쳐 새롭게 만들어나가는 ‘개진’을 실천합니다.
-                SCV Soft는 웹/앱 서비스 개발 및 유지보수를 제공하며, 다양한 사업자 유형에 맞춘 신규 암호화폐 개발 및 보안 솔루션 제공과 함께 관련분야 유지보수 사업을 진행하고 있습니다.
-                업계 최고의 속도와 퍼포먼스를 낼 수 있는 인재들이 SCV Soft 에서 귀하를 기다리고 있습니다. 최고의 솔루션과 퍼포먼스로 귀하의 아이디어를 더욱 화려하게 빛내드립니다.
-                다같이 만든 변화, 여러분들과 지금 나아갑니다.
-
-                © 2018 SCV Soft
+        <div class="columns is-multiline gray-2">
+            <div class="column is-2-desktop is-offset-3-desktop is-6-tablet">
+                <img src="./img/footer_logo.svg" width="75px" height="auto">
+                <p class="px-6">
+                    SCV Soft는 낡은것을 고쳐 새롭게 만들어나가는 ‘개진’을 실천합니다.
+                </p>
+                <br>
+                <p class="px-6">
+                    SCV Soft는 웹/앱 서비스 개발 및 유지보수를 제공하며, 다양한 사업자 유형에 맞춘 신규 암호화폐 개발 및 보안 솔루션 제공과 함께 관련분야 유지보수 사업을 진행하고 있습니다.
+                </p>
+                <br>
+                <p class="px-6">
+                    업계 최고의 속도와 퍼포먼스를 낼 수 있는 인재들이 SCV Soft 에서 귀하를 기다리고 있습니다. 최고의 솔루션과 퍼포먼스로 귀하의 아이디어를 더욱 화려하게 빛내드립니다.
+                </p>
+                <br>
+                <p class="px-6">
+                    다같이 만든 변화, 여러분들과 지금 나아갑니다.
+                </p>
+                <br>
+                <br>
+                <p class="px-6">
+                    © 2018 SCV Soft
+                </p>
             </div>
-            <div class="column">
-                SITE MAP
+            <div class="footer-sitemap column is-1-desktop is-offset-1-desktop is-6-tablet">
+                <p class="red px-6">SITE MAP</p>
 
-                Intro
-                사업 간단 소개
-                사업 분야 상세 소개
-                파트너 소개
-                사람들
-                프로젝트 진행 안내
+                <a href="#">Intro</a><br>
+                <a href="#">사업 간단 소개</a><br>
+                <a href="#">사업 분야 상세 소개</a><br>
+                <a href="#">파트너 소개</a><br>
+                <a href="#">사람들</a><br>
+                <a href="#">프로젝트 진행 안내</a>
             </div>
-            <div class="column">
-                주식회사 에스씨브이소프트
+            <div class="column px-6 is-2-desktop is-6-tablet is-offset-6-tablet">
+                <p class="red px-6">주식회사 에스씨브이소프트</p>
 
-                사업자 등록번호 557-86-01038
-                서울특별시 구로구 디지털로 288, 1212호 (구로구, 대륭포스트타워 1차)
-
-                contact@scvsoft.net
+                <p class="px-6">사업자 등록번호 557-86-01038</p>
+                <p class="px-6">서울특별시 구로구 디지털로 288, 1212호</p>
+                <p class="px-6">(구로구, 대륭포스트타워 1차)</p>
+                <br>
+                <br>
+                <p class="px-6">contact@scvsoft.net</p>
             </div>
         </div>
     </footer>
