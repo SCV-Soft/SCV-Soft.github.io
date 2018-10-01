@@ -294,38 +294,34 @@
                 <a class="navbar-item" href="http://www.scvsoft.net/">
                     <img src="./img/header_logo.svg" height="30px" width="120px">
                 </a>
-                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                    <a class="navbar-item" href="#intro">개요</a>
-                    <span>기술소개</span>
-                    <span>연구소</span>
-                    <span>비전</span>
-                    <span>파트너</span>
-                    <span>팀 소개</span>
-                    <span>프로젝트 진행</span>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </div>
             </div>
 
             <div id="navbarExampleTransparentExample" class="navbar-menu">
                 <div class="navbar-end">
-                    <div class="navbar-item px-7">
-                        <a class="navbar-item px-14 white" href="#intro">
-                            개요
-                        </a>
-                        <a class="navbar-item px-14 white" href="#stack">
-                            기술소개
-                        </a>
-                        <a class="navbar-item px-14 white" href="#vision">
-                            비전
-                        </a>
-                        <a class="navbar-item px-14 white" href="#partner">
-                            파트너
-                        </a>
-                        <a class="navbar-item px-14 white" href="#team">
-                            팀소개
-                        </a>
-                        <a class="navbar-item px-14 white" href="#project">
-                            프로젝트 진행
-                        </a>
+                    <a class="navbar-item px-14 white" href="#intro">
+                        개요
+                    </a>
+                    <a class="navbar-item px-14 white" href="#stack">
+                        기술소개
+                    </a>
+                    <a class="navbar-item px-14 white" href="#vision">
+                        비전
+                    </a>
+                    <a class="navbar-item px-14 white" href="#partner">
+                        파트너
+                    </a>
+                    <a class="navbar-item px-14 white" href="#team">
+                        팀소개
+                    </a>
+                    <a class="navbar-item px-14 white" href="#project">
+                        프로젝트
+                    </a>
+                    <div class="navbar-item px-14 white">
                         <div class="field is-grouped">
                             <p class="control">
                                 <a class="button px-14 header-button" href="mailto:contact@scvsoft.net">
@@ -669,5 +665,31 @@
         </div>
     </footer>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
 
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+
+    });
+</script>
 </html>
