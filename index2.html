@@ -221,6 +221,16 @@
             align-items: center;
         }
         
+        @media screen and (min-width: 1024px) {
+            .stack-blocktop {
+                min-height: 300px;
+            }
+
+            .stack-block-middle {
+                border-left: 0px;
+                border-right: 0px;
+            }
+        }
         .stack-blockbottom {
             padding-top: 50px;
             padding-bottom: 50px;
@@ -255,6 +265,11 @@
             height: auto !important;
             max-height: 90% !important;
         }
+
+        .mobile-show {
+            display: none;
+        }
+
         @media screen and (max-width: 768px) {
             .team-left {
                 padding-right: 30%;
@@ -390,37 +405,34 @@
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
-                </div>
-            </div>
-
-            <div id="navbarExampleTransparentExample" class="navbar-menu">
-                <div class="navbar-end">
-                    <a class="navbar-item px-14 white" href="#intro">
-                        개요
-                    </a>
-                    <a class="navbar-item px-14 white" href="#stack">
-                        기술소개
-                    </a>
-                    <a class="navbar-item px-14 white" href="#vision">
-                        비전
-                    </a>
-                    <a class="navbar-item px-14 white" href="#partner">
-                        파트너
-                    </a>
-                    <a class="navbar-item px-14 white" href="#team">
-                        팀소개
-                    </a>
-                    <a class="navbar-item px-14 white" href="#project">
-                        프로젝트
-                    </a>
-                    <div class="navbar-item px-14 white">
-                        <div class="field is-grouped">
-                            <p class="control">
-                                <a class="button px-14 header-button" href="mailto:contact@scvsoft.net">
-                                    <span>Contact Us</span>
-                                </a>
-                            </p>
-                        </div>
+                </a>
+            </div <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item px-14 white" href="#intro">
+                            개요
+                        </a>
+                <a class="navbar-item px-14 white" href="#stack">
+                            기술소개
+                        </a>
+                <a class="navbar-item px-14 white" href="#vision">
+                            비전
+                        </a>
+                <a class="navbar-item px-14 white" href="#partner">
+                            파트너
+                        </a>
+                <a class="navbar-item px-14 white" href="#team">
+                            팀소개
+                        </a>
+                <a class="navbar-item px-14 white" href="#project">
+                            프로젝트
+                        </a>
+                <div class="navbar-item px-14 white">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="button px-14 header-button" href="mailto:contact@scvsoft.net">
+                                <span>Contact Us</span>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -516,7 +528,7 @@
                     <p class="px-14">· 지갑 및 트랜젝션의 문제 발생 부분 개선 진행</p>
                 </div>
             </div>
-            <div class="stack-block column is-2-desktop is-6-tablet">
+            <div class="stack-block column is-2-desktop is-6-tablet stack-block-middle">
                 <div class="stack-blocktop">
                     <img src="./img/supericon2.svg" width="70%" height="auto">
                 </div>
