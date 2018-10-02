@@ -6,6 +6,10 @@
     <title>SCVSoft</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
 
 
     <style>
@@ -167,6 +171,14 @@
             border: 2px solid #f06447;
         }
         
+        .navbar-brand > a:hover {
+            color: white;
+        }
+
+        .navbar-brand > a {
+            color: white;
+        }
+
         .first-div {
             width: 270px;
             height: 30px;
@@ -397,6 +409,10 @@
             color: #212121;
         }
         
+        .bg-black {
+            background-color: #212121;
+        }
+
         .real-black {
             color: #000000;
         }
@@ -436,7 +452,7 @@
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div id="navbarExampleTransparentExample" class="navbar-menu bg-black">
             <div class="navbar-end">
                 <a class="navbar-item px-14 white" href="#intro">
                             개요
@@ -824,30 +840,16 @@
         </div>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        $(document).ready(function() {
 
-            // Get all "navbar-burger" elements
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
 
-            // Check if there are any navbar burgers
-            if ($navbarBurgers.length > 0) {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
 
-                // Add a click event on each of them
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-
-                        // Get the target from the "data-target" attribute
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-
-                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-
-                    });
-                });
-            }
-
+            });
         });
     </script>
 </body>
