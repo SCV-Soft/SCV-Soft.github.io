@@ -6,6 +6,10 @@
     <title>SCVSoft</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
 
 
     <style>
@@ -167,6 +171,14 @@
             border: 2px solid #f06447;
         }
         
+        .navbar-brand > a:hover {
+            color: white;
+        }
+
+        .navbar-brand > a {
+            color: white;
+        }
+
         .first-div {
             width: 270px;
             height: 30px;
@@ -343,6 +355,11 @@
             font-size: 1.2rem;
         }
 
+        .px-22 {
+            /* font-size: 22px; */
+            font-size: 1.1rem;
+        }
+
         .px-20 {
             /* font-size: 20px; */
             font-size: 1rem;
@@ -392,6 +409,10 @@
             color: #212121;
         }
         
+        .bg-black {
+            background-color: #212121;
+        }
+
         .real-black {
             color: #000000;
         }
@@ -415,6 +436,19 @@
         .bold {
             font-weight: bold;
         }
+
+        .team-top {
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+
+        .line-height-2_2rem {
+            line-height: 2.2rem;
+        }
+
+        .add-padding-bottom {
+            padding-bottom: 15px;
+        }
     </style>
 </head>
 
@@ -431,7 +465,7 @@
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div id="navbarExampleTransparentExample" class="navbar-menu bg-black">
             <div class="navbar-end">
                 <a class="navbar-item px-14 white" href="#intro">
                             개요
@@ -466,12 +500,18 @@
     <section id="first">
         <div class="columns has-text-centered is-centered">
             <div class="column white">
-                <img src="./img/main_icon.svg" width="600px" height="auto">
-                <p class="px-60 bold">상상의 중심, 변화의 시작.</p>
-                <p class="px-30">모든 사업의 시작에서 귀하의 곁에 함께합니다.</p>
-                <div class="first-div">
-                    <input type="email" placeholder="입력하신 이메일로 회사소개서를 보내드립니다." class="first-input">
-                    <button class="first-button"><i class="fas fa-arrow-right"></i></button>
+                <div class="columns">
+                    <div class="column">
+                        <img src="./img/main_icon.svg" width="435px" height="auto" class="add-padding-bottom">
+                        <p class="px-60 bold">상상의 중심 변화의 시작</p>
+                        <p class="px-30">모든 사업의 시작에서 귀하의 곁에 함께합니다.</p>
+                    </div>
+                </div>
+                <div class="columns is-centered">
+                    <div class="first-div">
+                        <input type="email" placeholder="입력하신 이메일로 회사소개서를 보내드립니다." class="first-input">
+                        <button class="first-button" ><i class="fas fa-arrow-right"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -482,8 +522,8 @@
                 낡은것을 고쳐<br> 새롭게
                 <br> 만들어나갑니다
             </div>
-            <div class="column is-3-desktop is-6-tablet is-12-mobile px-22">
-                주식회사 SCV Soft는 사업자의 아이디어에 맞춘 <br> 다양한 웹/앱 서비스 개발 및 유지보수를 제공합니다.<br> 그 외 각종 사업자 유형에 맞춘 신규 암호화폐 개발 및 보안 솔루션<br> 제공과 함께 관련분야 유지보수 사업을 제공하고 있습니다.<br>
+            <div class="column is-3-desktop is-6-tablet is-12-mobile px-22 line-height-2_2rem">
+                주식회사 SCV Soft는 사업자의 아이디어에 맞춘 <br> 다양한 웹/앱 서비스 개발 및 유지보수를 제공합니다.<br> 그 외 각종 사업자 유형에 맞춘 신규 암호화폐 개발 및 보안 솔루션 제공과 함께 관련분야 유지보수 사업을 제공하고 있습니다.<br>
                 <br>
                 <a href="mailto:contact@scvsoft.net" class="gray-2 bold unberbar"><u>지금 시작하기</u> ></a>
             </div>
@@ -547,7 +587,7 @@
                 </div>
                 <div class="stack-blockbottom">
                     <p class="px-30 bold">Cryptocurrency</p>
-                    <p class="px-30">보안 컨설팅</p>
+                    <p class="px-30 add-padding-bottom">보안 컨설팅</p>
                     <p class="px-14">· 코인 소스코드 및 블럭 전수분석 수행, 코인 취약점 발견 및 개선 컨설팅(전략기획, 코드 감사) 진행</p>
                     <p class="px-14">· 서버에 대한 공격 감지 및 대응 보고서 발행</p>
                     <p class="px-14">· 지갑 및 트랜젝션의 문제 발생 부분 개선 진행</p>
@@ -559,7 +599,7 @@
                 </div>
                 <div class="stack-blockbottom">
                     <p class="px-30 bold">Website</p>
-                    <p class="px-30">개발 전체 컨설팅</p>
+                    <p class="px-30 add-padding-bottom">개발 전체 컨설팅</p>
                     <p class="px-14">· 웹사이트 개발 기획, 디자인, 개발 전체 컨설팅 진행</p>
                     <p class="px-14">· 최신 트랜드를 반영한 맞춤형 홈페이지 제작 전문</p>
                     <p class="px-14">· 다양한 환경의 맞춤 웹사이트, 호스팅 및 유지보수, 기타 웹 기반 솔루션 개발 진행</p>
@@ -571,7 +611,7 @@
                 </div>
                 <div class="stack-blockbottom">
                     <p class="px-30 bold">Funding</p>
-                    <p class="px-30">솔루션 컨설팅/개발</p>
+                    <p class="px-30 add-padding-bottom">솔루션 컨설팅/개발</p>
                     <p class="px-14">· 서비스 백앤드 개발 및 프론트엔드 개발/디자인</p>
                     <p class="px-14">· 금융권 API 연동 및 자동화된 PG사 연동</p>
                     <p class="px-14">· 유지보수 데이터 마이그레이션 , 서버 관리</p>
@@ -627,28 +667,30 @@
                 파트너
             </div>
         </div>
-        <div class="columns is-centered is-mobile is-multiline has-text-centered">
-            <div class="column is-offset-3-desktop is-3-tablet-only is-6-mobile">
-                <div class="partner-logo">
-                    <img src="./img/logo_observer@2x.png">
+        <div class="columns">
+            <div class="column is-offset-3-desktop is-6-desktop">
+                <div class="columns is-centered is-mobile is-multiline has-text-centered">
+                    <div class="column is-3-tablet-only is-6-mobile">
+                        <div class="partner-logo">
+                            <img src="./img/logo_observer@2x.png">
+                        </div>
+                    </div>
+                    <div class="column is-3-tablet-only is-6-mobile">
+                        <div class="partner-logo">
+                            <img src="./img/logo_snsmobile@2x.png">
+                        </div>
+                    </div>
+                    <div class="column is-3-tablet-only is-6-mobile">
+                        <div class="partner-logo">
+                            <img src="./img/logo_kdex@2x.png">
+                        </div>
+                    </div>
+                    <div class="column is-3-tablet-only is-6-mobile">
+                        <div class="partner-logo">
+                            <img src="./img/logo_clust.svg">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="column is-3-tablet-only is-6-mobile">
-                <div class="partner-logo">
-                    <img src="./img/logo_snsmobile@2x.png">
-                </div>
-            </div>
-            <div class="column is-3-tablet-only is-6-mobile">
-                <div class="partner-logo">
-                    <img src="./img/logo_kdex@2x.png">
-                </div>
-            </div>
-            <div class="column is-3-tablet-only is-6-mobile">
-                <div class="partner-logo">
-                    <img src="./img/logo_clust.svg">
-                </div>
-            </div>
-            <div class="column is-offset-2-desktop">
             </div>
         </div>
     </section>
@@ -664,9 +706,11 @@
         <div class="columns is-mobile is-multiline">
             <div class="column is-2-desktop is-offset-3-desktop is-6-tablet is-12-mobile team-left">
                 <img src="./img/human1@3x.png" width="100%" height="auto">
-                <p class="px-30 bold">Oh Hyo Keun</p>
-                <p class="px-24 bold">CEO</p>
-                <p class="px-14">시간을 달리는 스타트업 힙스터</p>
+                <div class="team-top">
+                    <p class="px-30 bold">Oh Hyo Keun</p>
+                    <p class="px-24 bold">CEO</p>
+                    <p class="px-14">시간을 달리는 스타트업 힙스터</p>
+                </div>
                 <hr>
                 <div class="mobile-hidden" id="human1">
                     <p class="px-14">
@@ -679,9 +723,11 @@
             </div>
             <div class="column is-2-desktop is-6-tablet is-12-mobile team-right">
                 <img src="./img/human2@3x.png" width="100%" height="auto">
-                <p class="px-30 bold">Jeong In Woo</p>
-                <p class="px-24 bold">COO</p>
-                <p class="px-14">블록체인 몽상가</p>
+                <div class="team-top">
+                    <p class="px-30 bold">Jeong In Woo</p>
+                    <p class="px-24 bold">COO</p>
+                    <p class="px-14">블록체인 몽상가</p>
+                </div>
                 <hr>
                 <div class="mobile-hidden" id="human2">
                     <p class="px-14">
@@ -694,9 +740,11 @@
             </div>
             <div class="column is-2-desktop is-6-tablet is-12-mobile team-left">
                 <img src="./img/human3@3x.png" width="100%" height="auto">
-                <p class="px-30 bold">Lee Je Hyoung</p>
-                <p class="px-24 bold">CTO</p>
-                <p class="px-14">호기심 많은 테트리스 매니악</p>
+                <div class="team-top">
+                    <p class="px-30 bold">Lee Je Hyoung</p>
+                    <p class="px-24 bold">CTO</p>
+                    <p class="px-14">호기심 많은 테트리스 매니악</p>
+                </div>
                 <hr>
                 <div class="mobile-hidden" id="human3">
                     <p class="px-14">
@@ -709,9 +757,11 @@
             </div>
             <div class="column is-2-desktop is-offset-3-desktop is-6-tablet is-12-mobile team-right">
                 <img src="./img/unknown.jpg" alt="this is human something" width="100%" height="300px">
-                <p class="px-30 bold">Hong Deok Hyeon</p>
-                <p class="px-24 bold">CMO</p>
-                <p class="px-14">구글에 검색하면 나오는 사람</p>
+                <div class="team-top">
+                    <p class="px-30 bold">Hong Deok Hyeon</p>
+                    <p class="px-24 bold">CMO</p>
+                    <p class="px-14">구글에 검색하면 나오는 사람</p>
+                </div>
                 <hr>
                 <div class="mobile-hidden" id="human4">
                     <p class="px-14">
@@ -724,9 +774,11 @@
             </div>
             <div class="column is-2-desktop is-6-tablet is-12-mobile team-left">
                 <img src="./img/human5@3x.png" width="100%" height="auto">
-                <p class="px-30 bold">Ryu Hwang Won</p>
-                <p class="px-24 bold">Design Team Leader</p>
-                <p class="px-14">꿈을 꾸는 에오르제아의 수호자</p>
+                <div class="team-top">
+                    <p class="px-30 bold">Ryu Hwang Won</p>
+                    <p class="px-24 bold">Design Team Leader</p>
+                    <p class="px-14">꿈을 꾸는 에오르제아의 수호자</p>
+                </div>
                 <hr>
                 <div class="mobile-hidden" id="human5">
                     <p class="px-14">
@@ -772,9 +824,13 @@
         </div>
     </section>
     <footer class="footer">
+        <div class="columns">
+            <div class="column is-2-desktop is-offset-3-desktop is-6-tablet">
+                <img src="./img/footer_logo.svg" width="75px" height="auto" class="add-padding-bottom">
+            </div>
+        </div>
         <div class="columns is-multiline gray-2">
             <div class="column is-2-desktop is-offset-3-desktop is-6-tablet">
-                <img src="./img/footer_logo.svg" width="75px" height="auto">
                 <p class="px-12">
                     SCV Soft는 낡은것을 고쳐 새롭게 만들어나가는 ‘개진’을 실천합니다.
                 </p>
@@ -797,7 +853,7 @@
                 </p>
             </div>
             <div class="footer-sitemap column is-1-desktop is-offset-1-desktop is-6-tablet">
-                <p class="red px-14">SITE MAP</p>
+                <p class="red px-14 add-padding-bottom">SITE MAP</p>
 
                 <a href="#">Intro</a><br>
                 <a href="#">사업 간단 소개</a><br>
@@ -807,43 +863,29 @@
                 <a href="#">프로젝트 진행 안내</a>
             </div>
             <div class="column px-6 is-2-desktop is-6-tablet is-offset-6-tablet-only">
-                <p class="red px-14">주식회사 에스씨브이소프트</p>
+                <p class="red px-14 add-padding-bottom">주식회사 에스씨브이소프트</p>
 
                 <p class="px-12">사업자 등록번호 557-86-01038</p>
                 <p class="px-12">서울특별시 구로구 디지털로 288, 1212호</p>
                 <p class="px-12">(구로구, 대륭포스트타워 1차)</p>
                 <br>
                 <br>
-                <a class="px-12" href="mailto:contact@scvsoft.net">contact@scvsoft.net</p>
+                <a class="px-12" href="mailto:contact@scvsoft.net">contact@scvsoft.net</a>
             </div>
         </div>
     </footer>
-</body>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
+    <script>
+        $(document).ready(function() {
 
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
 
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
 
-            // Add a click event on each of them
-            $navbarBurgers.forEach(el => {
-                el.addEventListener('click', () => {
-
-                    // Get the target from the "data-target" attribute
-                    const target = el.dataset.target;
-                    const $target = document.getElementById(target);
-
-                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                    el.classList.toggle('is-active');
-                    $target.classList.toggle('is-active');
-
-                });
             });
-        }
-
-    });
-</script>
+        });
+    </script>
+</body>
 </html>
