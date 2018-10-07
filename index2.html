@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SCVSoft</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+    <!-- http://webdir.tistory.com/337 참고 할 것! -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico">
+    <!-- TODO : 좀 더 세분화된 분류가 필요 현재는 16x16으로 떔빵 -->
+
+
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -446,6 +453,10 @@
         .add-padding-bottom {
             padding-bottom: 15px;
         }
+
+        .add-padding-bottom-30px {
+            padding-bottom: 30px;
+        }
     </style>
 </head>
 
@@ -454,7 +465,7 @@
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="http://www.scvsoft.net/">
-                <img src="./img/header_logo.svg" height="30px" width="120px">
+                <img src="./img/header_logo.svg" height="60px" width="120px">
             </a>
             <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
@@ -499,8 +510,8 @@
             <div class="column white">
                 <div class="columns">
                     <div class="column">
-                        <img src="./img/main_icon.svg" width="435px" height="auto" class="add-padding-bottom">
-                        <p class="px-60 bold">상상의 중심 변화의 시작</p>
+                        <img src="./img/main_icon.svg" width="808px" height="auto" class="add-padding-bottom">
+                        <p class="px-60 bold">상상의 중심, 변화의 시작</p>
                         <p class="px-30">모든 사업의 시작에서 귀하의 곁에 함께합니다.</p>
                     </div>
                 </div>
@@ -669,22 +680,38 @@
                 <div class="columns is-centered is-mobile is-multiline has-text-centered">
                     <div class="column is-3-tablet-only is-6-mobile">
                         <div class="partner-logo">
-                            <img src="./img/logo_observer@2x.png">
+                            <a href="https://obsr.org/index">
+                                <img src="./img/logo_obsr_gray.svg"
+                                     onmouseover="this.src='./img/logo_obsr_color.svg'"
+                                     onmouseout="this.src='./img/logo_obsr_gray.svg'">
+                            </a>
                         </div>
                     </div>
                     <div class="column is-3-tablet-only is-6-mobile">
                         <div class="partner-logo">
-                            <img src="./img/logo_snsmobile@2x.png">
+                            <a href="#">
+                                <img src="./img/logo_snsmobile_gray.svg"
+                                     onmouseover="this.src='./img/logo_snsmobile_color.svg'"
+                                     onmouseout="this.src='./img/logo_snsmobile_gray.svg'">
+                            </a>
                         </div>
                     </div>
                     <div class="column is-3-tablet-only is-6-mobile">
                         <div class="partner-logo">
-                            <img src="./img/logo_kdex@2x.png">
+                            <a href="http://kdex.io">
+                                <img src="./img/logo_kdex_gray.svg"
+                                     onmouseover="this.src='./img/logo_kdex_color.svg'"
+                                     onmouseout="this.src='./img/logo_kdex_gray.svg'">
+                            </a>
                         </div>
                     </div>
                     <div class="column is-3-tablet-only is-6-mobile">
                         <div class="partner-logo">
-                            <img src="./img/logo_clust.svg">
+                            <a href="http://www.blockpatch.kr/">
+                                <img src="./img/logo_blockpatch_gray.svg"
+                                     onmouseover="this.src='./img/logo_blockpatch_color.svg'"
+                                     onmouseout="this.src='./img/logo_blockpatch_gray.svg'">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -705,7 +732,7 @@
                 <img src="./img/human1@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Oh Hyo Keun</p>
-                    <p class="px-24 bold">CEO</p>
+                    <p class="px-24 bold add-padding-bottom-30px ">CEO</p>
                     <p class="px-14">시간을 달리는 스타트업 힙스터</p>
                 </div>
                 <hr>
@@ -722,7 +749,7 @@
                 <img src="./img/human2@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Jeong In Woo</p>
-                    <p class="px-24 bold">COO</p>
+                    <p class="px-24 bold add-padding-bottom-30px ">COO</p>
                     <p class="px-14">블록체인 몽상가</p>
                 </div>
                 <hr>
@@ -739,7 +766,7 @@
                 <img src="./img/human3@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Lee Je Hyoung</p>
-                    <p class="px-24 bold">CTO</p>
+                    <p class="px-24 bold add-padding-bottom-30px ">CTO</p>
                     <p class="px-14">호기심 많은 테트리스 매니악</p>
                 </div>
                 <hr>
@@ -756,7 +783,7 @@
                 <img src="./img/unknown.jpg" alt="this is human something" width="100%" height="300px">
                 <div class="team-top">
                     <p class="px-30 bold">Hong Deok Hyeon</p>
-                    <p class="px-24 bold">CMO</p>
+                    <p class="px-24 bold add-padding-bottom-30px ">CMO</p>
                     <p class="px-14">구글에 검색하면 나오는 사람</p>
                 </div>
                 <hr>
@@ -773,7 +800,7 @@
                 <img src="./img/human5@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Ryu Hwang Won</p>
-                    <p class="px-24 bold">Design Team Leader</p>
+                    <p class="px-24 bold add-padding-bottom-30px ">Design Team Leader</p>
                     <p class="px-14">꿈을 꾸는 에오르제아의 수호자</p>
                 </div>
                 <hr>
@@ -799,23 +826,24 @@
             </div>
             <div class="project-right column is-3-desktop is-6-tablet is-12-mobile white red-background">
                 <p class="px-24 bold">
-                    다음과 같은 프로세스를 따릅니다.
+                    프로젝트는 다음과 같은 프로세스를 통해진행됩니다. 저희 SCVSoft의 모두는 사업자의 아이디어가 최상의 결과물로 나올 수 있도록 최선을 다하겠습니다.
                 </p>
                 <hr>
                 <p class="px-20">
-                    <b>1.</b> 클라이언트의 요구 사항을 분석합니다.
+                    <b>1.</b> 사업자의 아이디어를 분석하여 최상의 기획 결과물이 나올 수 있도록 준비합니다.
+
                 </p>
                 <p class="px-20">
-                    <b>2.</b> 요구 사항에 기반한 단가 책정을 시행합니다.
+                    <b>2.</b> 기획안이 확정되고나면, 사업자의 요청사항에 기반한 단가 책정을 시행하여 보고드립니다.
                 </p>
                 <p class="px-20">
-                    <b>3.</b> 인력을 투입하여 개발을 실시합니다.
+                    <b>3.</b> 기획안과 단가가 확정되면, 사업자의 요청사항에 맞춰 본격적인 프로젝트의 개발을 시작합니다.
                 </p>
                 <p class="px-20">
-                    <b>4.</b> 납기를 합니다.
+                    <b>4.</b> 개발이 완료되면 사업자에게 납기를 진행하며, 이 과정에서 오류 분석 및 추가적인 사업자의 요청사항에 맞춘 수정을 진행합니다.
                 </p>
                 <p class="px-20">
-                    <b>5.</b> 검수 및 추가 개발 사항에 대해서 확인을 합니다.
+                    <b>5.</b> 마지막으로 완료된 결과물에 대한 검수와 함께, 추가로 발생한 개발 사항에 대해서 확인을 진행합니다.
                 </p>
             </div>
         </div>
