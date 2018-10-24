@@ -133,10 +133,11 @@
             padding-bottom: 100px;
             padding-left: 40px;
             padding-right: 40px;
-            text-align: justify;
+            /* text-align: justify; */
         }
         
         #project {
+            overflow-y: hidden;
         }
         
         .project-left {
@@ -443,7 +444,19 @@
 
         .team-top {
             padding-top: 20px;
-            padding-bottom: 15px;
+            padding-bottom: 20px;
+        }
+
+        .team-shortintro {
+            padding-top: 26px;
+        }
+
+        .team-hr {
+            margin-top: 0px;
+            margin-bottom: 15px;
+            background-color: black;
+            height: 2px;
+            width: 54px;
         }
 
         .line-height-2_2rem {
@@ -511,7 +524,7 @@
                 <div class="columns">
                     <div class="column">
                         <img src="./img/main_icon.svg" width="808px" height="auto" class="add-padding-bottom">
-                        <p class="px-60 bold">상상의 중심, 변화의 시작</p>
+                        <p class="px-60 bold">상상의 중심, 변화의 시작.</p>
                         <p class="px-30">모든 사업의 시작에서 귀하의 곁에 함께합니다.</p>
                     </div>
                 </div>
@@ -527,8 +540,8 @@
     <section id="intro">
         <div class="columns is-centered">
             <div class="column is-3-desktop is-5-tablet is-12-mobile px-60 bold">
-                낡은것을 고쳐<br> 새롭게
-                <br> 만들어나갑니다
+                낡은것을 고쳐<br>새롭게
+                <br>만들어나갑니다.
             </div>
             <div class="column is-3-desktop is-6-tablet is-12-mobile px-22 line-height-2_2rem">
                 주식회사 SCV Soft는 사업자의 아이디어에 맞춘 <br> 다양한 웹/앱 서비스 개발 및 유지보수를 제공합니다.<br> 그 외 각종 사업자 유형에 맞춘 신규 암호화폐 개발 및 보안 솔루션 제공과 함께 관련분야 유지보수 사업을 제공하고 있습니다.<br>
@@ -736,10 +749,10 @@
                 <img src="./img/human1@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Oh Hyo Keun</p>
-                    <p class="px-24 bold add-padding-bottom-30px ">CEO</p>
-                    <p class="px-14">시간을 달리는 스타트업 힙스터</p>
+                    <p class="px-24 bold">CEO</p>
+                    <p class="px-14 team-shortintro">시간을 달리는 스타트업 힙스터</p>
                 </div>
-                <hr>
+                <hr class="team-hr">
                 <div class="mobile-hidden" id="human1">
                     <p class="px-14">
                         몇몇 스타트업을 거친 이후로, 오효근 대표는 자신이 IT 스타트업을 운영해도 그들보다는 잘 할 수 있겠다라는 생각이 들었다. 그는 생각이 든 대로 그와 뜻이 맞는 친구들을 모아 SCVSoft를 창설하였으며, 보안 프로그래밍과 블록체인에 대한 풍부한 경험을 바탕으로 회사를 운영하고 있다. 그는 그의 긴 머리칼만큼 긴 시간을 업무에 투자하고 있으며, 최근에는 바다를 보며 코딩하고 싶다는 이야기를 하고 있다.
@@ -753,10 +766,10 @@
                 <img src="./img/human2@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Jeong In Woo</p>
-                    <p class="px-24 bold add-padding-bottom-30px ">COO</p>
-                    <p class="px-14">블록체인 몽상가</p>
+                    <p class="px-24 bold">COO</p>
+                    <p class="px-14 team-shortintro">블록체인 몽상가</p>
                 </div>
-                <hr>
+                <hr class="team-hr">
                 <div class="mobile-hidden" id="human2">
                     <p class="px-14">
                         정인우 COO는 3년 이상의 블록체인 관련 업무 경험을 가지 고 있다. 그는 항상 새로운 블록체인 서비스의 론칭 아이디어 를 구상하고 있으며, 그의 아이디어는 SCV 기술자, 투자자들 과의 소통을 통해 단단해져 간다. 그는 지금까지 5개의 블록 체인 플랫폼 아이디어를 프로젝트로 옮겼다. 지금까지 그의 아이디어 로켓은 언제나 폭발하였지만, 그는 언젠가 달으로 갈 날을 희망하고 있다.
@@ -770,10 +783,10 @@
                 <img src="./img/human3@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Lee Je Hyoung</p>
-                    <p class="px-24 bold add-padding-bottom-30px ">CTO</p>
-                    <p class="px-14">호기심 많은 테트리스 매니악</p>
+                    <p class="px-24 bold">CTO</p>
+                    <p class="px-14 team-shortintro">호기심 많은 테트리스 매니악</p>
                 </div>
-                <hr>
+                <hr class="team-hr">
                 <div class="mobile-hidden" id="human3">
                     <p class="px-14">
                         보안 프로그래밍, IoT 개발, 프로그램 분석, 소프트웨어 교육 등 여기저기 재미있어 보이는 것이라면 다 해봐야 직성이 풀 리는 이제형 CTO는 SCVSoft에서 재미있는 일을 벌이고 있 다는 소문을 듣고 계약서에 도장을 찍었다. 그는 평소에 회사 로 오면 주로 테트리스를 하고 있으며, 하루 평균 2-3시간 정 도를 테트리스에 할애하고 있다.
@@ -787,10 +800,10 @@
                 <img src="./img/unknown.jpg" alt="this is human something" width="100%" height="300px">
                 <div class="team-top">
                     <p class="px-30 bold">Hong Deok Hyeon</p>
-                    <p class="px-24 bold add-padding-bottom-30px ">CMO</p>
-                    <p class="px-14">구글에 검색하면 나오는 사람</p>
+                    <p class="px-24 bold">CMO</p>
+                    <p class="px-14 team-shortintro">구글에 검색하면 나오는 사람</p>
                 </div>
-                <hr>
+                <hr class="team-hr">
                 <div class="mobile-hidden" id="human4">
                     <p class="px-14">
                         삼성전자, LG전자 등에서 마케터로 일했던 홍덕현 CMO는 전 부터 블록체인에 관련된 사업을 해보고 싶었기에 SCVSoft 호 에 탑승을 했습니다. 잦은 풍랑이 있었지만, 그는 이 배가 멋 진 신세계로 나아 갈 것이라고 믿고있으며 자신의 믿음을 실 현하기 위해 열심히 노를 젓고 있습니다.
@@ -804,10 +817,10 @@
                 <img src="./img/human5@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Ryu Hwang Won</p>
-                    <p class="px-24 bold add-padding-bottom-30px ">Design Team Leader</p>
-                    <p class="px-14">꿈을 꾸는 에오르제아의 수호자</p>
+                    <p class="px-24 bold">Design Team Leader</p>
+                    <p class="px-14 team-shortintro">꿈을 꾸는 에오르제아의 수호자</p>
                 </div>
-                <hr>
+                <hr class="team-hr">
                 <div class="mobile-hidden" id="human5">
                     <p class="px-14">
                         디자인을 통해 세상을 좀 더 편리하게 하고 싶었던 류황원 디 자이너는 자신의 꿈과 가장 가까이 있다고 생각해 다니고 있 던 대형 제약회사를 그만두고 SCVSoft와 함께하기로 했다. 세상천지가 디자인이라 모든게 마음에 안드는 그는 SCVSoft 에서 최소한 클라이언트의 제품만이라도 보기 불편하지 않게 하자는 생각으로 일하고 있다.
