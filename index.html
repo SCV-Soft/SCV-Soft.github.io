@@ -265,13 +265,21 @@
             align-items: center;
         }
         
-        @media screen and (min-width: 1023px) {
+        @media screen and (min-width: 769px) {
+
+            .stack-block-middle {
+                border-left: 0px;
+            }
+        }
+
+        @media screen and (min-width: 1025px) {
 
             .stack-block-middle {
                 border-left: 0px;
                 border-right: 0px;
             }
         }
+
         .stack-blockbottom {
             padding-top: 50px;
             padding-bottom: 50px;
@@ -478,7 +486,7 @@
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="http://www.scvsoft.net/">
-                <img src="./img/header_logo.svg" height="60px" width="120px">
+                <img src="./img/header_logo.svg" height="60px" width="120px" style="max-height:none!important">
             </a>
             <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
