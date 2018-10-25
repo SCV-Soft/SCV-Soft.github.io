@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SCVSoft</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- http://webdir.tistory.com/337 참고 할 것! -->
     <!-- favicon -->
@@ -17,7 +18,7 @@
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
         @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -552,7 +553,8 @@
                         <p class="px-30">모든 사업의 시작에서 귀하의 곁에 함께합니다.</p>
                     </div>
                 </div>
-                <div class="columns is-centered is-mobile">
+                <div class="columns is-centered is-mobile" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                     <div class="first-div">
                         <input type="email" placeholder="입력하신 이메일로 회사소개서를 보내드립니다." class="first-input">
                         <button class="first-button" ><i class="fas fa-arrow-right"></i></button>
@@ -563,18 +565,18 @@
     </section>
     <section id="intro">
         <div class="columns is-centered">
-            <div class="column is-3-desktop is-5-tablet is-12-mobile px-60 bold">
+            <div class="column is-3-desktop is-5-tablet is-12-mobile px-60 bold" data-aos="fade-down">
                 낡은것을 고쳐<br>새롭게
                 <br>만들어나갑니다.
             </div>
-            <div class="column is-3-desktop is-6-tablet is-12-mobile px-22 line-height-2_2rem">
+            <div class="column is-3-desktop is-6-tablet is-12-mobile px-22 line-height-2_2rem" data-aos="fade-down">
                 주식회사 SCV Soft는 사업자의 아이디어에 맞춘 <br> 다양한 웹/앱 서비스 개발 및 유지보수를 제공합니다.<br> 그 외 각종 사업자 유형에 맞춘 신규 암호화폐 개발 및 보안 솔루션 제공과 함께 관련분야 유지보수 사업을 제공하고 있습니다.<br>
                 <br>
                 <a href="mailto:contact@scvsoft.net" class="gray-2 bold unberbar"><u>지금 시작하기</u> ></a>
             </div>
         </div>
         <div class="intro-icons columns has-text-centered is-multiline is-mobile is-centered">
-            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item" data-aos="zoom-in">
                 <div class="intro-icon">
                     <img src="./img/icon1.svg" class="intro-icon-img">
                 </div>
@@ -582,7 +584,7 @@
                     메이저 암호화폐<br> 기반 DApp 제작
                 </p>
             </div>
-            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item" data-aos="zoom-in">
                 <div class="intro-icon">
                     <img src="./img/icon2.svg" class="intro-icon-img">
                 </div>
@@ -590,7 +592,7 @@
                     바이너리 동적 분석<br> 보안전문가 파견
                 </p>
             </div>
-            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item" data-aos="zoom-in">
                 <div class="intro-icon">
                     <img src="./img/icon3.svg" class="intro-icon-img">
                 </div>
@@ -598,7 +600,7 @@
                     소스코드 정적 분석<br> C/Python/PHP/Java
                 </p>
             </div>
-            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item" data-aos="zoom-in">
                 <div class="intro-icon">
                     <img src="./img/icon4.svg" class="intro-icon-img">
                 </div>
@@ -606,7 +608,7 @@
                     소스코드 정적 분석<br> 보안 전문가 파견
                 </p>
             </div>
-            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item" data-aos="zoom-in">
                 <div class="intro-icon">
                     <img src="./img/icon5.svg" class="intro-icon-img">
                 </div>
@@ -614,7 +616,7 @@
                     웹/앱 브랜딩 및<br> 디자인 종합 컨설팅
                 </p>
             </div>
-            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item">
+            <div class="column is-1-desktop is-4-tablet is-half-mobile intro-item" data-aos="zoom-in">
                 <div class="intro-icon">
                     <img src="./img/icon6.svg" class="intro-icon-img">
                 </div>
@@ -703,39 +705,39 @@
     </section>
     <section id="vision">
         <div class="columns has-text-centered is-mobile is-multiline">
-            <div class="column">
+            <div class="column" data-aos="fade-down">
                 <p class="vision-title px-60 bold">
                     획기적인 사업에 맞는<br> 획기적인 기술 개발 진행
                 </p>
             </div>
         </div>
         <div class="columns is-multiline">
-            <div class="vision-item column is-2-desktop is-offset-3-desktop is-4-tablet">
+            <div class="vision-item column is-2-desktop is-offset-3-desktop is-4-tablet" data-aos="zoom-in-down">
                 <img src="./img/bigicon1.svg" class="vision-icon-img">
                 <p class="vision-item-title px-30 bold">DApp 제작</p>
                 <p class="px-14">메이저 코인(비트코인, 이더리움 등 상위권 코인) 기반의 다양한 DApp 제작 전문</p>
             </div>
-            <div class="vision-item column is-2-desktop is-4-tablet">
+            <div class="vision-item column is-2-desktop is-4-tablet" data-aos="zoom-in-down">
                 <img src="./img/bigicon2.svg" class="vision-icon-img">
                 <p class="vision-item-title px-30 bold">바이너리 동적 분석</p>
                 <p class="px-14">관련분야 보안전문가 파견 전문가가 디플로이 서버/테스트서버에 모의해킹 수행 바이너리 정보를 이용한 퍼징/Memory Violation을 통한 공격 수행 모의 해킹 정보를 통한 모의 보고서 발행</p>
             </div>
-            <div class="vision-item column is-2-desktop is-4-tablet">
+            <div class="vision-item column is-2-desktop is-4-tablet" data-aos="zoom-in-down">
                 <img src="./img/bigicon3.svg" class="vision-icon-img">
                 <p class="vision-item-title px-30 bold">소스코드 정적 분석</p>
                 <p class="px-14">자체 개발 정적 분석기 (C/Python/PHP/Java) 각 언어를 중간언어(IR)로 트랜스 코딩 IR에 대한 Data/Control Flow 분석 수행 취약점 발견시 자동 넘버링, Graph 형태 트레이스 산출</p>
             </div>
-            <div class="vision-item column is-2-desktop is-offset-3-desktop is-4-tablet">
+            <div class="vision-item column is-2-desktop is-offset-3-desktop is-4-tablet" data-aos="zoom-in-down">
                 <img src="./img/bigicon4.svg" class="vision-icon-img">
                 <p class="vision-item-title px-30 bold">보안 전문가 파견</p>
                 <p class="px-14">소스코드 정적분석 진행 전문가의 투입, 코드 드라이빙을 통한 취약점 분석 분석 정보를 바탕으로 한 보고서 작성</p>
             </div>
-            <div class="vision-item column is-2-desktop is-4-tablet">
+            <div class="vision-item column is-2-desktop is-4-tablet" data-aos="zoom-in-down">
                 <img src="./img/bigicon5.svg" class="vision-icon-img">
                 <p class="vision-item-title px-30 bold">디자인 컨설팅</p>
                 <p class="px-14">전문 디자인팀의 다양한 디자인 컨설팅 진행 다양한 환경의 반응형 웹 및 앱 플랫폼 브랜딩 및 디자인 수행 컨설턴트 팀 보유</p>
             </div>
-            <div class="vision-item column is-2-desktop is-4-tablet">
+            <div class="vision-item column is-2-desktop is-4-tablet" data-aos="zoom-in-down">
                 <img src="./img/bigicon6.svg" class="vision-icon-img">
                 <p class="vision-item-title px-30 bold">반응형 웹 개발</p>
                 <p class="px-14">Node 프레임워크 기반의 완전 반응형 웹 개발 개발/기획/디자인 모두를 포함한 웹 개발 컨설팅 통합 맞춤형 서비스 진행</p>
@@ -752,7 +754,8 @@
             <div class="column is-offset-3-desktop is-6-desktop">
                 <div class="columns is-centered is-mobile is-multiline has-text-centered">
                     <div class="column is-3-tablet-only is-6-mobile">
-                        <div class="partner-logo">
+                        <div class="partner-logo" data-aos="fade-up"
+     data-aos-duration="3000">
                             <a href="https://obsr.org/index">
                                 <img src="./img/logo_obsr_gray.svg"
                                      onmouseover="this.src='./img/logo_obsr_color.svg'"
@@ -762,7 +765,8 @@
                         </div>
                     </div>
                     <div class="column is-3-tablet-only is-6-mobile">
-                        <div class="partner-logo">
+                        <div class="partner-logo" data-aos="fade-up"
+     data-aos-duration="3000">
                             <a href="#">
                                 <img src="./img/logo_snsmobile_gray.svg"
                                      onmouseover="this.src='./img/logo_snsmobile_color.svg'"
@@ -772,7 +776,8 @@
                         </div>
                     </div>
                     <div class="column is-3-tablet-only is-6-mobile">
-                        <div class="partner-logo">
+                        <div class="partner-logo" data-aos="fade-up"
+     data-aos-duration="3000">
                             <a href="http://kdex.io">
                                 <img src="./img/logo_kdex_gray.svg"
                                      onmouseover="this.src='./img/logo_kdex_color.svg'"
@@ -782,7 +787,8 @@
                         </div>
                     </div>
                     <div class="column is-3-tablet-only is-6-mobile">
-                        <div class="partner-logo">
+                        <div class="partner-logo" data-aos="fade-up"
+     data-aos-duration="3000">
                             <a href="http://www.blockpatch.kr/">
                                 <img src="./img/logo_blockpatch_gray.svg"
                                      onmouseover="this.src='./img/logo_blockpatch_color.svg'"
@@ -805,7 +811,7 @@
             </div>
         </div>
         <div class="columns is-mobile is-multiline">
-            <div class="column is-2-desktop is-offset-3-desktop is-6-tablet is-12-mobile team-left">
+            <div class="column is-2-desktop is-offset-3-desktop is-6-tablet is-12-mobile team-left" data-aos="zoom-in-down">
                 <img src="./img/human1@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Oh Hyo Keun</p>
@@ -822,7 +828,7 @@
                     <a href="#human1"><b>프로필 보기 ></b></a>
                 </div>
             </div>
-            <div class="column is-2-desktop is-6-tablet is-12-mobile team-right">
+            <div class="column is-2-desktop is-6-tablet is-12-mobile team-right" data-aos="zoom-in-down">
                 <img src="./img/human2@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Jeong In Woo</p>
@@ -839,7 +845,7 @@
                     <a href="#human1"><b>프로필 보기 ></b></a>
                 </div>
             </div>
-            <div class="column is-2-desktop is-6-tablet is-12-mobile team-left">
+            <div class="column is-2-desktop is-6-tablet is-12-mobile team-left" data-aos="zoom-in-down">
                 <img src="./img/human3@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Lee Je Hyoung</p>
@@ -856,8 +862,8 @@
                     <a href="#human1"><b>프로필 보기 ></b></a>
                 </div>
             </div>
-            <div class="column is-2-desktop is-offset-3-desktop is-6-tablet is-12-mobile team-right">
-                <img src="./img/unknown.jpg" alt="this is human something" width="100%" height="300px">
+            <div class="column is-2-desktop is-offset-3-desktop is-6-tablet is-12-mobile team-right" data-aos="zoom-in-down">
+                <img src="./img/human4@3x.png" alt="this is human something" width="100%" height="300px">
                 <div class="team-top">
                     <p class="px-30 bold">Hong Deok Hyeon</p>
                     <p class="px-24 bold">CMO</p>
@@ -873,7 +879,7 @@
                     <a href="#human1"><b>프로필 보기 ></b></a>
                 </div>
             </div>
-            <div class="column is-2-desktop is-6-tablet is-12-mobile team-left">
+            <div class="column is-2-desktop is-6-tablet is-12-mobile team-left" data-aos="zoom-in-down">
                 <img src="./img/human5@3x.png" width="100%" height="auto">
                 <div class="team-top">
                     <p class="px-30 bold">Ryu Hwang Won</p>
@@ -895,7 +901,9 @@
         </div>
     </section>
     <section id="project">
-        <div class="columns is-centered is-mobile is-multiline">
+        <div class="columns is-centered is-mobile is-multiline"  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
             <div class="project-left column is-3-desktop is-6-tablet is-12-mobile white red-background">
                 <p class="px-70 px-40-m bold">
                     프로젝트는<br> 어떤 방식을 통해<br> 진행되나요?
@@ -983,6 +991,7 @@
         </div>
     </footer>
     <script>
+        AOS.init();
         $(document).ready(function() {
 
             // Check for click events on the navbar burger icon
