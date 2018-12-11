@@ -1,0 +1,17 @@
+<svg id="icon-design" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.703 34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="패스_87" data-name="패스 87" class="cls-1" d="M21.711,26.545H.02V21.39H21.711ZM1.237,25.322H20.494V22.6H1.237Z" transform="translate(-0.007 -7.691)"/>
+  <path id="패스_88" data-name="패스 88" class="cls-1" d="M.01,14.979V0H14.746V2.632A8.825,8.825,0,0,0,17.257.25L17.442,0h4.265V14.947ZM1.227,1.217V13.756l19.257-.032V1.217H18.051a8.3,8.3,0,0,1-3.74,2.965l-.788.243V1.217Z" transform="translate(-0.004)"/>
+  <rect id="사각형_277" data-name="사각형 277" class="cls-1" width="1.114" height="7.378" transform="translate(13.513 0.122)"/>
+  <rect id="사각형_278" data-name="사각형 278" class="cls-1" width="1.114" height="7.378" transform="translate(10.253 0.122)"/>
+  <rect id="사각형_279" data-name="사각형 279" class="cls-1" width="1.114" height="7.378" transform="translate(6.993 0.122)"/>
+  <rect id="사각형_280" data-name="사각형 280" class="cls-1" width="1.114" height="7.378" transform="translate(3.727 0.122)"/>
+  <path id="패스_89" data-name="패스 89" class="cls-1" d="M10.842,41.695a2.761,2.761,0,0,1-2.76-2.76V31.66a2.072,2.072,0,0,0-1.953-2.165H2.177A2.18,2.18,0,0,1,0,27.317V24.09c0-.077.006-.16.013-.25V21.4H21.672v4.656h-.006v1.255a2.18,2.18,0,0,1-2.177,2.177H15.537A2.032,2.032,0,0,0,13.6,31.41v7.525A2.755,2.755,0,0,1,10.842,41.695ZM1.236,22.623v1.3l-.006.038a1.078,1.078,0,0,0-.013.128v3.228a.959.959,0,0,0,.961.961H6.212l.045.006A3.291,3.291,0,0,1,9.3,31.66v7.282a1.543,1.543,0,1,0,3.087,0V31.352a3.31,3.31,0,0,1,3.029-3.068l.045-.006h4.035a.959.959,0,0,0,.961-.961V24.845h.006V22.623H1.236Z" transform="translate(0 -7.695)"/>
+  <circle id="타원_9" data-name="타원 9" class="cls-1" cx="0.756" cy="0.756" r="0.756" transform="translate(10.067 30.196)"/>
+</svg>
