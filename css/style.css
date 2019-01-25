@@ -1166,7 +1166,7 @@ background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
 	font-weight: 200;
 	color: #f06447;
 	letter-spacing: 3px;
-	font-family: 'Bungee Inline', cursive;
+	/* font-family: 'Bungee Inline', cursive; */
 	padding:45px;
 	box-shadow:0 0 20px rgba(0, 0, 0, 0.5);
 	border:0px solid #fff;
@@ -1214,7 +1214,7 @@ background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
 	padding-top:10px;
 	padding-bottom:10px;
 	font-weight:100;
-	 font-family:'Bungee Inline', cursive;
+	/* font-family: 'Bungee Inline', cursive; */
 }
 .hero .hero-content-ii.light-txt .hero-subtitle {
 	color: #fff;
@@ -1261,7 +1261,7 @@ background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
 	font-weight: 600;
 	color: #f06447;
 	letter-spacing:22px;
-	font-family: 'Bungee Inline', cursive;
+	/* font-family: 'Bungee Inline', cursive; */
 	padding:45px;
 	box-shadow:0 0 20px rgba(0, 0, 0, 0.5);
 	border:0px solid #fff;
@@ -1371,7 +1371,7 @@ background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
     text-transform: uppercase;
     color: #000;
     line-height: 90px;
-    font-family:'Bungee Inline', cursive;
+    /* font-family:'Bungee Inline', cursive; */
 
     letter-spacing: 1px;
 
@@ -1993,7 +1993,7 @@ margin-bottom: 20px;
 .video-text h1 {
 	color: #000;
 	font-size: 55px;
-	font-family: 'Bungee Inline', cursive;
+	/* font-family: 'Bungee Inline', cursive; */
 	text-transform: uppercase;
 	
 	 
