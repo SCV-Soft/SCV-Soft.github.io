@@ -278,7 +278,7 @@ header .intro-text .intro-heading {font-size:30px;}
 .btn-download-wt i{ font-size:16px;}
 .btn-get{ width:170px; font-size:12px; margin:0px;}
 .btn-get i{ font-size:16px;}
-.hero .hero-content-i h1, .video-banner h1{ font-size:18px;}
+.hero .hero-content-i h1, .video-banner h1 { font-size:18px !important;}
 .hero .hero-content-ii h1, .video-banner h1{ font-size:20px; padding:25px; letter-spacing:5px;}
 .header-text h1{ font-size:25px;}
 .content-v h1{ font-size:25px; letter-spacing:2px; margin-top:-60px;}
@@ -310,7 +310,6 @@ header .intro-text .intro-heading {font-size:30px;}
 #owl-slider .item .slider-info h5{ margin:10px;}
 p.para{ font-size:12px;}
 .btn-style-order-nav{ font-size:13px;}
-.black{ font-size:12px;}
 .video-text h1{ font-size:20px;}
 .white-back {
 
