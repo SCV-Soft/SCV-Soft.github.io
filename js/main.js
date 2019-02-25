@@ -332,9 +332,6 @@
         letterInterval: 60,
         textInterval: 3e3
     });
-
-
-
 })(jQuery); // JavaScript Document
 
 // JavaScript Document// JavaScript Document
