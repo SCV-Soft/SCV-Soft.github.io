@@ -127,10 +127,9 @@
 
 
     function init_loader() {
-        $("#loader").fadeOut("slow", function () {
-            $("#preloader").delay(300).fadeOut("slow")
-        })
-
+        var loader = $('#loader');
+        loader.addClass('loaded');
+        $('#preloader').delay(250).fadeOut('fast');
     }
 
 
